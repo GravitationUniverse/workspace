@@ -10,11 +10,15 @@ Fast_move는 간단한 명령으로 경로를 이동할 수 있게 도움을 주
 
 ## 설치 방법
 
-source install 명령으로 설치하고 설치하면서 생성된 ~/Fast_move는 해당 경로에 데이터가 존재해야 사용할 수 있으므로 옮기거나 삭제하지 않고 사용하여 주시는 것을 권장 드립니다.
+1. curl -O https://raw.githubusercontent.com/GravitationUniverse/workspace/Fast_move/install.sh 명령을 실행합니다.
 
-~/Fast_move 디렉터리가 이미 존재하는 경우 설치가 불가합니다.
+2. source install 명령을 실행합니다.
 
-source restore 명령으로 설정된 환경을 되돌릴 수 있습니다.
+(명령으로 설치하면서 생성된 ~/Fast_move는 해당 경로에 데이터가 존재해야 사용할 수 있으므로 옮기거나 삭제하지 않고 사용해 주시기를 권장합니다.)
+
+(~/Fast_move 디렉터리가 이미 존재하는 경우 설치가 불가합니다.)
+
+(설치된 환경은 source restore 명령으로 되돌릴 수 있습니다.)
 
 ---
 
