@@ -1,17 +1,17 @@
 **____**FAST_MOVE_install**____**(){
-echo "### Installing... ###"
-#local path="foryou-Fast_move"
-#local pakage_check=$(rpm -qa |grep unzip)
-#if [ "$pakage_check" = "" ]; then
-#  yum install unzip -y 1>/dev/null 2>/dev/null
-#fi
-#local dir_check=$(ls "$path" 2>/dev/null)
-#if [ "$zip_file_check" = "" ]; then
-#  curl -LJO https://github.com/GravitationUniverse/foryou/archive/Fast_move.zip 1>/dev/null 2>/dev/null
-#  yes|unzip foryou-Fast_move.zip 1>/dev/null 2>/dev/null
-#  local tar_file="$(ls "$path/" 2>/dev/null |grep tar)"
-#  tar -xvf "$path/$tar_file" 1>/dev/null 2>/dev/null 
-#fi
+echo "#### Installing... ####"
+local path="foryou-Fast_move"
+local pakage_check=$(rpm -qa |grep unzip)
+if [ "$pakage_check" = "" ]; then
+  yum install unzip -y 1>/dev/null 2>/dev/null
+fi
+local dir_check=$(ls "$path" 2>/dev/null)
+if [ "$zip_file_check" = "" ]; then
+  curl -LJO https://github.com/GravitationUniverse/foryou/archive/Fast_move.zip 1>/dev/null 2>/dev/null
+  yes|unzip foryou-Fast_move.zip 1>/dev/null 2>/dev/null
+  local tar_file="$(ls "$path/" 2>/dev/null |grep tar)"
+  tar -xvf "$path/$tar_file" 1>/dev/null 2>/dev/null 
+fi
 local path1=~/Fast_move
 local path2=$path1/stack
 local error_check0=0
@@ -82,7 +82,7 @@ if [ $error_check0 = 0 ] && [ $error_check1 = 0 ] && [ $error_check2 = 0 ] && [ 
   mv c $path1
   source ~/.bashrc
   >$path1/install_check
-  echo "### Finished !! ###"
+  echo "#### Finished !! ####"
 else
   if [ $error_check0 = 1 ]; then
     echo "Already existing '$path1' dir!"
