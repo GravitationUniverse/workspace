@@ -1,6 +1,6 @@
 
 
-# Update Date : 2024.06.16 19:55
+# Update Date : 2024.06.22 22:08
 
 OS : Centos 8 기준
 
@@ -13,11 +13,11 @@ Fast_move는 간단한 명령으로 경로를 이동할 수 있게 도움을 주
 아래의 명령어들을 순서대로 실행합니다.
 
 ```sh
-curl -O https://raw.githubusercontent.com/GravitationUniverse/workspace/Fast_move/install
+curl -O https://raw.githubusercontent.com/GravitationUniverse/workspace/Fast_move/install.sh
 ```
 
 ```sh
-source install
+source install.sh
 ```
 
 (명령으로 설치하면서 생성된 ~/Fast_move는 해당 경로에 데이터가 존재해야 사용할 수 있으므로 옮기거나 삭제하지 않고 사용해 주시기를 권장합니다.)
@@ -29,7 +29,7 @@ source install
 아래의 명령어들을 순서대로 실행하시면 원래의 상태로 되돌릴 수 있습니다.
 
 ```sh
-source recover
+source recover.sh
 ```
 
 ---
