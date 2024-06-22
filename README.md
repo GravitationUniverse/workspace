@@ -13,15 +13,11 @@ Fast_move는 간단한 명령으로 경로를 이동할 수 있게 도움을 주
 아래의 명령어들을 순서대로 실행합니다.
 
 ```sh
-curl -O https://raw.githubusercontent.com/GravitationUniverse/workspace/Fast_move/install.sh
+curl -O https://raw.githubusercontent.com/GravitationUniverse/workspace/Fast_move/install
 ```
 
 ```sh
-bash install
-```
-
-```sh
-source ~/.bashrc
+source install
 ```
 
 (명령으로 설치하면서 생성된 ~/Fast_move는 해당 경로에 데이터가 존재해야 사용할 수 있으므로 옮기거나 삭제하지 않고 사용해 주시기를 권장합니다.)
@@ -33,11 +29,7 @@ source ~/.bashrc
 아래의 명령어들을 순서대로 실행하시면 원래의 상태로 되돌릴 수 있습니다.
 
 ```sh
-bash restore 
-```
-
-```sh
-source ~/.bashrc
+source recover
 ```
 
 ---
